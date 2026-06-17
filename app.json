@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "SoHealthy",
+    "slug": "sohealthy-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "sohealthy",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B3F2F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "al.sohealthy.app",
+      "buildNumber": "1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B3F2F"
+      },
+      "package": "al.sohealthy.app",
+      "versionCode": 1
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#1B3F2F"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SoHealthy ka nevojë për kamerën për të skanuar ushqimet."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "SoHealthy ka nevojë për akses në galeri për të skanuar ushqimet."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
